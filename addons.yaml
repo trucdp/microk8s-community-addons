@@ -243,3 +243,12 @@ microk8s-addons:
       supported_architectures:
         - arm64
         - amd64
+
+    - name: "gitlab-runner"
+      description: "gitlab-runner"
+      version: "0.60.0"
+      check_status: "deployment.apps/gitlab-runner"
+      confinement: "classic"
+      supported_architectures:
+        - arm64
+        - amd64
